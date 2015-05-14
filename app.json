@@ -1,0 +1,24 @@
+{
+  "name": "Getting Started with Twilio Video",
+  "description": "Demo app showing the beta version of Twilio Video",
+  "keywords": [
+    "twilio",
+    "node.js",
+    "express",
+    "video"
+  ],
+  "env": {
+    "TWILIO_ACCOUNT_SID": {
+      "description": "API username - find your account SID at https://www.twilio.com/user/account/voice-messaging",
+      "required": true
+    },
+    "TWILIO_AUTH_TOKEN": {
+      "description": "API password - find your auth token at https://www.twilio.com/user/account/voice-messaging",
+      "required": true
+    }
+  },
+  "website": "https://github.com/kwhinnery/video-node",
+  "repository": "https://github.com/kwhinnery/video-node",
+  "logo": "https://s3.amazonaws.com/howtodocs/twilio-logo.png",
+  "success_url": "/"
+}
