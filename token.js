@@ -1,5 +1,5 @@
 var util = require('util');
-var twilio = require('twilio');
+var twilio = require('./twilio');
 
 // Fetch a signing key from the Twilio REST API, which we'll use to mint our 
 // access tokens below in exports.generateToken
