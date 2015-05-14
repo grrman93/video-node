@@ -3,7 +3,9 @@
 <head>
     <title>Twilio Video Quick Start (Node.js Edition)</title>
     <style type="text/css">
-
+    #me, #you {
+        display:inline-block;
+    }
     </style>
 </head>
 <body>
@@ -13,16 +15,18 @@
     <div id="startDiv">
         <p>Enter Your Name Here:</p>
         <input id="my-name" 
-            placeholder="Your name, but no spaces! e.g. 'kevin' or 'Tina'"/>
+            placeholder="your name"/>
         <button id="start">Let's Do This!</button>
     </div>
 
     <!-- Here's the call UI -->
     <div id="callDiv" style="display:none;">
-        <div id="me">Your Video Will Go Here</div>
-        <div id="you">Other Person's Video Will Go Here</div>
-        <input id="other-name" placeholder="Rob"/>
-        <button id="call">Video Call This Person</button>
+        <div id="me"></div>
+        <div id="you"></div>
+        <div>
+            <input id="other-name" placeholder="other person's name"/>
+            <button id="call">Video Call This Person</button>
+        </div>
     </div>
 
     <!-- Release the JavaScripts -->

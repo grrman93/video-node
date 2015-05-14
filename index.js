@@ -11,7 +11,6 @@ var server = http.createServer(app);
 
 // Generate a JWT token to use with the video SDK
 app.get('/token', function(request, response) {
-    console.log(token.generateToken(request.query.name));
     // Generate a token for the name requested, with both "listen" and "invite"
     // permissions (the default set of permissions)
     response.send({
